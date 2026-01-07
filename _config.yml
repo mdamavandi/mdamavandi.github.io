@@ -1,0 +1,26 @@
+title: Mack Damavandi
+description: Software Engineer | Mack Damavandi
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mdamavandi.github.io" # the base hostname & protocol
+
+markdown: kramdown
+theme: null
+
+permalink: pretty
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+  projects:
+    output: true
+    permalink: /projects/:name/
+  case-studies:
+    output: true
+    permalink: /case-studies/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
